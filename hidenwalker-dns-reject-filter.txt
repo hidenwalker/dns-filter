@@ -24125,3 +24125,4 @@ lan.line.me^
 ||external-api.impression-neo.naver.com.nheos.com^$important
 ||cdn.newsnjoy.or.kr^
 ||cdn.electimes.com^
+||blog.kakaocdn.net^
