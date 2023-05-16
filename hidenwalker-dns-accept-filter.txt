@@ -205,4 +205,5 @@
 @@||c.kakaku.com^$important
 @@||tracking.post.japanpost.jp^$important
 @@||d.line-scdn.net^$important
+@@||tracking.sagawa-sgx.com^$important
 #whitelist end
