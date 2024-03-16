@@ -1,4 +1,10 @@
-#whitelist start
+! Title: Hiden Walker's DNS accept list
+! Description: Hiden Walker's DNS accept list. Exceptions of Hiden Walker's DNS block list.
+! Author: Hiden Walker
+! Version: 1.0.0
+! TimeUpdated: 2024-03-16T12:00:00+09:00
+! Homepage: https://github.com/hidenwalker/dns-filter/
+#acceptlist start
 @@||adguard.com^
 @@||afl.rakuten.co.jp^$important
 @@||campaign.aliexpress.com^$important
@@ -206,4 +212,4 @@
 @@||tracking.post.japanpost.jp^$important
 @@||d.line-scdn.net^$important
 @@||tracking.sagawa-sgx.com^$important
-#whitelist end
+#acceptlist end
