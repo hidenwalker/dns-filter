@@ -3,6 +3,7 @@
 ! Author: Hiden Walker
 ! Version: 1.0.1
 ! TimeUpdated: 2024-03-16T12:01:00+09:00
+! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/hidenwalker/dns-filter/
 #acceptlist start
 @@||adguard.com^
