@@ -3,6 +3,7 @@
 ! Author: Hiden Walker
 ! Version: 1.0.0
 ! TimeUpdated: 2024-03-16T12:00:00+09:00
+! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/hidenwalker/dns-filter/
 #RegEx start
 /^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]/
