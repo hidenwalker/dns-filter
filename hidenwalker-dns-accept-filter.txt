@@ -1,8 +1,8 @@
 ! Title: Hiden Walker's DNS accept list
 ! Description: Hiden Walker's DNS accept list. Exceptions of Hiden Walker's DNS block list.
 ! Author: Hiden Walker
-! Version: 1.0.0
-! TimeUpdated: 2024-03-16T12:00:00+09:00
+! Version: 1.0.1
+! TimeUpdated: 2024-03-16T12:01:00+09:00
 ! Homepage: https://github.com/hidenwalker/dns-filter/
 #acceptlist start
 @@||adguard.com^
@@ -58,8 +58,14 @@
 @@||blogthumb.pstatic.net^$important
 @@||gw.line.naver.jp^$important
 @@||nelo2-col.linecorp.com^$important
-@@|api.appnoticve.naver.com^$important
+@@||api.appnoticve.naver.com^$important
 #not sure end
+#naver blog start
+@@||m.blog.naver.com^$important
+#naver blog end
+#naver search start
+@@||m.search.naver.com^$important
+#naver search end
 #naver end
 @@||legy-jp-addr.line.naver.jp^$important
 #@@||daitoryuseimonkai.jimdofree.com^$important
