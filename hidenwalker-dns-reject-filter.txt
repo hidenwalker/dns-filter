@@ -67,6 +67,26 @@
 ||wpadmngr.com^
 ||magsrv.com^
 ||f864fdc049.com^
+! --- Global Telemetry & Marketing Automation (From GPT Review)
+||browser-intake-datadoghq.com^
+||sentry.io^
+||appsflyersdk.com^
+||braze.com^
+||tracking.hub-ez.com^
+
+! --- Amazon Ads (Japan)
+||aax-fe.amazon.co.jp^
+
+! --- Xiaomi/Tencent Tracking (Default Block)
+! (Note: Specific devices allowed in Accept Filter will override this)
+||tracking.miui.com^
+||tracking.intl.miui.com^
+||sdkconfig.ad.xiaomi.com^
+||sdkconfig.ad.intl.xiaomi.com^
+||stat.youpin.mi.com^
+||logs.amap.com^
+||h.trace.qq.com^
+||ios.bugly.qq.com^
 
 ! ===========================================================
 ! [6] NAVER PSTATIC DEFAULT DENY (core policy)
