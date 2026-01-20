@@ -3,25 +3,25 @@
 ! Homepage: https://github.com/hidenwalker/dns-filter/
 ! Description: Whitelist rules. Works in pair with hidenwalker-dns-reject-filter.txt
 ! Last Modified: 2026-01-20
+! License: Personal use
 
 ! ===========================================================
 ! [1] SECURITY & INFRASTRUCTURE
 ! ===========================================================
 @@||adguard.com^
-@@||ocsp*.apple.com^$important
-@@||xp.apple.com^$important
-@@||sectigo.com^$important
-@@||globalsign.com^$important
 @@||cdn.jsdelivr.net^$important
 @@||nordvpn.nanorep.co^$important
 
 ! ===========================================================
 ! [2] APPLE & GOOGLE ESSENTIALS
 ! ===========================================================
+@@||ocsp*.apple.com^$important
+@@||xp.apple.com^$important
 @@||amp-api-edge.apps.apple.com^$important
 @@||clients*.google.com^$important
 @@||googleapis.com^$important
 @@||securemetrics.apple.com^$important
+! [Device Exception] Apple Ads/News SDK for specific iPhone
 @@||iadsdk.apple.com^$client='192.168.0.16',important
 
 ! ===========================================================
@@ -46,10 +46,10 @@
 ! ===========================================================
 @@||daumcdn.net^$important
 @@||kakaocdn.net^$important
-! [기기 예외] 특정 기기 앱 딜레이 방지
+! [Device Exception] Prevent app delay
 @@||stat.tiara.daum.net^$client='192.168.0.12',important
 
-! Line 필수 기능 (스티커, 이미지 전송)
+! Line Essentials
 @@||line-scdn.net^$important
 @@||line-apps.com^$important
 @@||obs.line-scdn.net^$important
@@ -59,16 +59,16 @@
 ! ===========================================================
 ! [5] SHOPPING & FINANCE (KR/JP)
 ! ===========================================================
-! 쿠팡 이미지
+! Coupang
 @@||image.coupangcdn.com^$important
-! 아마존JP / 라쿠텐 (포인트/결제 유지)
+! Amazon JP / Rakuten
 @@||r.r10s.jp^$important
 @@||fls-fe.amazon.co.jp^$important
-! 배송 조회
+! Delivery Tracking
 @@||tracking.kuronekoyamato.co.jp^$important
 @@||tracking.sagawa-sgx.com^$important
 @@||trackings.post.japanpost.jp^$important
-! 결제/금융
+! Payments
 @@||paypal.com^$important
 @@||c.paypal.com^$client='192.168.0.12',important
 @@||americanexpress.com^$important
@@ -93,9 +93,8 @@
 ! ===========================================================
 @@||t.co^$important
 @@||bit.ly^
-! [Webhiden] 월간 비전 (무술 잡지)
+! Personal Whitelists
 @@||webhiden.jp^$important
-! [Jimdo] 무술 관련 특정 도메인만 허용
 @@||daitoryuseimonkai.jimdofree.com^$important
 @@||magica-odo.jimdo.com^$important
 @@||kisuikan-tomikiaikido-dojo.jimdo.com^$important
