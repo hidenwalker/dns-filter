@@ -1,222 +1,102 @@
-! Title: Hiden Walker's DNS accept list
-! Description: Hiden Walker's DNS accept list. Exceptions of Hiden Walker's DNS block list.
+! Title: Hiden Walker's AdGuard Home Accept Filter (Strict KR/JP Edition)
 ! Author: Hiden Walker
-! Version: 1.0.1
-! TimeUpdated: 2024-03-16T12:01:00+09:00
-! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/hidenwalker/dns-filter/
-#acceptlist start
+! Description: Whitelist rules. Works in pair with hidenwalker-dns-reject-filter.txt
+! Last Modified: 2026-01-20
+
+! ===========================================================
+! [1] SECURITY & INFRASTRUCTURE
+! ===========================================================
 @@||adguard.com^
-@@||afl.rakuten.co.jp^$important
-@@||campaign.aliexpress.com^$important
-@@||cdn.hancom.com^$important
-#Apple Start
-#iadsdk.apple.com apple news ads
-#apple certificate validation
 @@||ocsp*.apple.com^$important
 @@||xp.apple.com^$important
-#@@||ocsp.apple.com^$important
-#@@||ocsp2.apple.com^$important
-@@||token.safebrowsing.apple^$important
-@@||proxy.safebrowsing.apple^$important
-@@||safebrowsing.g.aaplimg.com^$important
-#https://iphone-mania.jp/news-346881/
-#Apple End
-# googlemaps start
+@@||sectigo.com^$important
+@@||globalsign.com^$important
+@@||cdn.jsdelivr.net^$important
+@@||nordvpn.nanorep.co^$important
+
+! ===========================================================
+! [2] APPLE & GOOGLE ESSENTIALS
+! ===========================================================
+@@||amp-api-edge.apps.apple.com^$important
 @@||clients*.google.com^$important
-@@||clients.l.google.com^$important
-# googlemaps end
-#naver cafe essential start
-@@||nelo2-col.navercorp.com^$important
-#naver cafe essential end
-# uber eats start
-@@||cn-geo1.uber.com^
-# uber eats end
-#naver news start
-@@||mimgnews.pstatic.net^$important
+@@||googleapis.com^$important
+@@||securemetrics.apple.com^$important
+@@||iadsdk.apple.com^$client='192.168.0.16',important
+
+! ===========================================================
+! [3] NAVER SERVICE OPTIMIZATION (White-list Only)
+! Reject 리스트에서 차단된 pstatic.net 중 필수 요소만 허용
+! ===========================================================
 @@||ssl.pstatic.net^$important
-@@||phinf.pstatic.net^$important
-@@||mblogthumb-phinf.pstatic.net^$important
-@@||blogpfthumb-phinf.pstatic.net^$important
-@@||static-nnews.pstatic.net^$important
+@@||mimgnews.pstatic.net^$important
 @@||imgnews.pstatic.net^$important
-@@||a01-g-naver-vod.pstatic.net^$important
-@@||sstatic-rmcnmv.pstatic.net^$important
-#naver news end
+@@||static-nnews.pstatic.net^$important
+@@||phinf.pstatic.net^$important
 @@||search.pstatic.net^$important
-@@||naverwebtoon-phinf.pstatic.net^$important
-#not sure start
-@@||er.search.naver.com^$important
-@@||editor-static.pstatic.net^$important
-@@||static.line-scdn.net^$important
-@@||rat.rakuten.co.jp^$important
-@@||rakuten.112.2o7.net^$important
-@@||cafeptthumb-phinf.pstatic.net^$important
-@@||mcafethumb-phinf.pstatic.net^$important
+@@||image-comic.pstatic.net^$important
 @@||cafe.pstatic.net^$important
-@@||ca-fe.pstatic.net^$important
 @@||cafethumb.pstatic.net^$important
 @@||blogthumb.pstatic.net^$important
+@@||editor-static.pstatic.net^$important
+@@||nid.naver.com^$important
+
+! ===========================================================
+! [4] KAKAO / DAUM / LINE
+! ===========================================================
+@@||daumcdn.net^$important
+@@||kakaocdn.net^$important
+! [기기 예외] 특정 기기 앱 딜레이 방지
+@@||stat.tiara.daum.net^$client='192.168.0.12',important
+
+! Line 필수 기능 (스티커, 이미지 전송)
+@@||line-scdn.net^$important
+@@||line-apps.com^$important
+@@||obs.line-scdn.net^$important
+@@||lan.line.me^$important
 @@||gw.line.naver.jp^$important
-@@||nelo2-col.linecorp.com^$important
-@@||api.appnoticve.naver.com^$important
-#not sure end
-#naver blog start
-@@||m.blog.naver.com^$important
-#naver blog end
-#naver search start
-@@||m.search.naver.com^$important
-#naver search end
-#naver end
-@@||legy-jp-addr.line.naver.jp^$important
-#@@||daitoryuseimonkai.jimdofree.com^$important
-#@@||magica-odo.jimdo.com^$important
-#@@||kisuikan-tomikiaikido-dojo.jimdo.com^$important
-#@@||kisuikan-tomikiaikido-dojo.jimdofree.com^$important
-@@||jimdo.com^$important
-@@||jimdofree.com^$important
-#dthumb-phinf.pstatic.net
-#m-influencer.pstatic.net
-#l.m.naver.com
-#influencer-phinf.pstatic.net
-#l.msdl.naver.com
-#naver start
-#@@||ace.naver.com^$important,client=133.106.0.0/8|172.107.0.0/8
-#||ace.naver.com^
-#@@||ace.naver.com^$important
-#||cc.naver.com^
-#@@||gfp.veta.naver.com^$important,client=133.106.0.0/8|172.107.0.0/8
-#@@||tivan.naver.com^$important,client=133.106.0.0/8|172.107.0.0/8
-#@@||lcs.naver.com^$important,client=133.106.0.0/8|172.107.0.0/8
-#@@||lcs.naver.com^$important
-#blog start
-@@||lcs.naver.com^$important
-@@||cc.naver.com^$important
-@@||nil.naver.com^$important
-#blog end
-#cafe start
-@@||tivan.naver.com^$important
-#cafe end
-#||mailbox.tyrsystems.com^$important
-#@@||local^$client='172.107.194.156'
-#@@||local^$client='133.106.33.61'
-@@||go.kr^$important
-@@||local^$important,client=133.106.0.0/8|172.107.0.0/8
-#,client=133.106.0.0/8|172.107.0.0/8
-#xiaomi start
-@@||alogs.umengcloud.com^$important
-@@||alogs.umeng.com^$important
-@@||api.io.mi.com^$important
-#@@||uop.umeng.com^$important
-#@@||tracking.miui.com^$important
-#@@||static.home.mi.com^$important
-#@@||resolver.msg.xiaomi.net^$important
-#@@||ios.bugly.qq.com^$important
-#xiaomi end
+
+! ===========================================================
+! [5] SHOPPING & FINANCE (KR/JP)
+! ===========================================================
+! 쿠팡 이미지
+@@||image.coupangcdn.com^$important
+! 아마존JP / 라쿠텐 (포인트/결제 유지)
+@@||r.r10s.jp^$important
+@@||fls-fe.amazon.co.jp^$important
+! 배송 조회
+@@||tracking.kuronekoyamato.co.jp^$important
+@@||tracking.sagawa-sgx.com^$important
+@@||trackings.post.japanpost.jp^$important
+! 결제/금융
+@@||paypal.com^$important
+@@||c.paypal.com^$client='192.168.0.12',important
+@@||americanexpress.com^$important
+@@||paypay.onelink.me^$important
+@@||agoda.com^$important
+
+! ===========================================================
+! [6] IOT & CLIENT SPECIFIC EXCEPTIONS
+! ===========================================================
+@@||dyn.keepa.com^$client='192.168.0.12',important
+@@||tracking.miui.com^$client='192.168.0.12',important
+@@||ios.bugly.qq.com^$client='192.168.0.12',important
+@@||aps1-device-telemetry-gw.iot.i.tplinknbu.com^$important
+@@||stat.youpin.mi.com^$client='192.168.0.12',important
+@@||logs.amap.com^$client='192.168.0.12',important
 @@||local^$client='192.168.0.11'
 @@||use.typekit.net^$client='192.168.0.11'
-@@||nordvpn.nanorep.co^$important
-#@@||s.youtube.com^$important
-@@||redirector.googlevideo.com^$important
-@@||rd.rakuten.co.jp^$app=com.adguard.dns
-@@||rd.rakuten.co.jp^$domain=rakuten.co.jp
-@@||cdp.cloud.unity3d.com^$important
-@@||launches.appsflyer.com^$important
-@@||config.uca.cloud.unity3d.com^$important
-@@||hilton.cdn-v3.conductrics.net^$important
-@@||image-comic.pstatic.net^$important
-@@||use.typekit.net^$important
-@@||p.typekit.net^$important
-@@||data.mistat.intl.xiaomi.com^$important
-@@||data.mistat.xiaomi.com^$important
-@@||daypass.api-glb-tyo.smoot.apple.com^$important
-@@||dict.naver.com^
-@@||fonts.gstatic.com^$important
-@@||id.rakuten.co.jp^$important
-@@||jal.co.jp^$important
-@@||nulyamada-6.hs.llnwd.net^$important
-@@||rd.rakuten.co.jp^$important
-@@||rdsig.yahoo.co.jp^$important
-@@||rds-op-apne1.amazon.com^$important
-@@||stat.ameba.jp^$important
-@@||www.takarakuji-official.jp^$important
-@@ftp.tsukuba.wide.ad.jp^
-@@||webhiden.jp^
 @@||lightstep.medium.systems^$client='192.168.0.11'
-#@@||microsoft.com^$important
-#@@||msedge.net^$important
-#@@||xboxlive.com^$important
-#@@||msn.com^$important
-#@@||live.com^$important
-@@||trackings.post.japanpost.jp^$important
-@@||ko.delta.com^$important
-@@||ko-content.delta.com^$important
-@@||nva-pci-as-delta01.lb.onelink-translations.com^$important
-@@||ja.delta.com^$important
-@@||colo-asia-deltaair.onelink-translations.com^$important
-@@||trib.al^$important
-#@@||alogs.umengcloud.com^$important
-#@@||api.ranking.rakuten.co.jp
-#@@||api.smoot.apple.com^$important
-#@@||ap-northeast-1.prod.pr.analytics.console.aws.a2z.com^$important
-#@@||apps.identrust.com^$important
-#@@||clients1.google.com^$important
-#@@||clients2.google.com^$important
-#@@||clients3.google.com^$important
-#@@||clients4.google.com^$important
-#@@||clients5.google.com^$important
-#@@||ias.rakuten.co.jp
-#@@||lan.line.me$important
-@@||lan.line.me^$important
-@@||admin.blog.naver.com^$important
-@@||weverse-rmcnmv.pstatic.net^$important
-@@||resources-rmcnmv.pstatic.net^$important
-@@||weverse-phinf.pstatic.net^$important
-@@||financial.pstatic.net^$important
-@@||dthumb-phinf.pstatic.net^$important
-@@||blogfiles.pstatic.net^$important
-@@||mblogvideo-phinf.pstatic.net^$important
-@@||static-feedback.pstatic.net^$important
-@@||scs-phinf.pstatic.net^$important
-@@||post-phinf.pstatic.net^$important
-@@||obs.line-scdn.net^$important
-@@||www.biccamera.com^$important
-@@||image.biccamera.com^$important
-@@||omns.americanexpress.com^$important
-@@||apollo-cdn.pstatic.net^$important
-@@||shop-phinf.pstatic.net^$important
-@@||img-shop.pstatic.net^$important
-@@||static-resource-smartstore.pstatic.net^$important
-@@||graph.instagram.com^$important
-@@||graph.instagram.com^$important
-@@||aem-collector.daumkakao.io$important
-@@||kyson.kakao.com$important
-@@||videostats.kakao.com$important
-#||vads-api.daumkakao.com$important
-@@||amp-api-edge.apps.apple.com^$important
-@@||me2.do^$important
-@@||track.affiliate-b.com^$important
-@@||i.instagram.com^$important
-@@||l.m.naver.com^$important
-@@||order.pstatic.net^$important
-@@||s.pstatic.net^$important
-@@||blogimgs.pstatic.net^$important
-@@||postfiles.pstatic.net^$important
-@@||em.willer.co.jp^$important
-@@||us.msgs.jp^$important
-@@||cf.iadsdk.apple.com^$important
-@@||radarsubmissions.apple.com^$important
-@@||api-glb-apne1c.smoot.apple.com^$important
-@@||api.smoot.apple.com^$important
-@@||api-glb-apne1d.smoot.apple.com^$important
-@@||fbs.smoot.apple.com^$important
-@@||amp-api-search-edge.apps.apple.com^$important
-@@||amp-api-edge.music.apple.com^$important
-@@||sf-api-token-service.itunes.apple.com^$important
-@@||globaltrust.crt.sectigo.com^$important
-@@||c.kakaku.com^$important
-@@||c.kakaku.com^$important
-@@||tracking.post.japanpost.jp^$important
-@@||d.line-scdn.net^$important
-@@||tracking.sagawa-sgx.com^$important
-#acceptlist end
+
+! ===========================================================
+! [7] MISC & PERSONAL INTERESTS
+! ===========================================================
+@@||t.co^$important
+@@||bit.ly^
+! [Webhiden] 월간 비전 (무술 잡지)
+@@||webhiden.jp^$important
+! [Jimdo] 무술 관련 특정 도메인만 허용
+@@||daitoryuseimonkai.jimdofree.com^$important
+@@||magica-odo.jimdo.com^$important
+@@||kisuikan-tomikiaikido-dojo.jimdo.com^$important
+@@||kisuikan-tomikiaikido-dojo.jimdofree.com^$important
