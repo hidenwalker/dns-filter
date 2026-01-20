@@ -41,6 +41,13 @@
 @@||editor-static.pstatic.net^$important
 @@||nid.naver.com^$important
 
+! --- Naver Essentials (Fonts & Shopping)
+@@||hangeul.pstatic.net^$important
+@@||shopping-phinf.pstatic.net^$important
+@@||shopv.pstatic.net^$important
+@@||shopping-window.pstatic.net^$important
+@@||static-like.pstatic.net^$important
+
 ! ===========================================================
 ! [4] KAKAO / DAUM / LINE
 ! ===========================================================
