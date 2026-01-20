@@ -48,6 +48,21 @@
 @@||shopping-window.pstatic.net^$important
 @@||static-like.pstatic.net^$important
 
+! --- Naver Smart Store & Shopping Essentials (Audited)
+! [Critical] Fixes Cart/Payment logic errors
+@@||static-resource-smartstore.pstatic.net^$important
+
+! [Critical] Product images & User reviews
+@@||shop-phinf.pstatic.net^$important
+@@||shopping-phinf.pstatic.net^$important
+@@||dthumb-phinf.pstatic.net^$important
+
+! [Optional] Webtoon Thumbnails (User Preference)
+@@||comicthumb-phinf.pstatic.net^$important
+
+! [Note] Excluded 'gfd-phinf' due to potential ad content mixture.
+! [Note] Excluded 'g-selected'/'dthumb' to maintain Strict policy (Enable only if UI is broken).
+
 ! ===========================================================
 ! [4] KAKAO / DAUM / LINE
 ! ===========================================================
