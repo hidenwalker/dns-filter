@@ -94,6 +94,8 @@
 @@||local^$client='192.168.0.11'
 @@||use.typekit.net^$client='192.168.0.11'
 @@||lightstep.medium.systems^$client='192.168.0.11'
+! Allow DDNS IP Check
+@@||checkip.dyndns.org^$important
 
 ! ===========================================================
 ! [7] MISC & PERSONAL INTERESTS
