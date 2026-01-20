@@ -100,6 +100,7 @@
 ! ===========================================================
 @@||t.co^$important
 @@||bit.ly^
+@@||checkip.dyndns.org^$important
 ! Personal Whitelists
 @@||webhiden.jp^$important
 @@||daitoryuseimonkai.jimdofree.com^$important
