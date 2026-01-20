@@ -3,14 +3,15 @@
 ! Description: Blocking rules. Works in pair with hidenwalker-dns-accept-filter.txt
 ! Last Modified: 2026-01-20
 ! Note: Includes Regex patterns, Country blocks, and Default Deny rules for pstatic.
+! License: Personal use
 
 ! ===========================================================
-! [1] COUNTRY / TLD BLOCKING (국가별 차단)
+! [1] COUNTRY / TLD BLOCKING
 ! ===========================================================
 /(^|.*\.)((cn|ru|ro|cz|de|vn|th|id|pk|ir|sa))$/
 
 ! ===========================================================
-! [2] AD & TRACKING PATTERNS (일반 광고/추적 정규식)
+! [2] AD & TRACKING PATTERNS (regex)
 ! ===========================================================
 /^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]/
 /^(.+[_.-])?telemetry[_.-]/
@@ -29,7 +30,7 @@
 /^goscan[_.-]/
 
 ! ===========================================================
-! [3] BROAD WILDCARD BLOCK (광역 차단 유지)
+! [3] BROAD WILDCARD BLOCK
 ! ===========================================================
 ||ad.*^
 ||ad[0-9].*^
@@ -43,7 +44,7 @@
 ||tracking.*^
 
 ! ===========================================================
-! [4] ADULT / GAMBLING / SCAM (안전형 정규식)
+! [4] ADULT / GAMBLING / SCAM (boundary safe)
 ! ===========================================================
 /(^|[._-])((porn|pr0n|xxx|adult|hentai|nude|nudity|milf|anal|pussy|dick|cock|blowjob|handjob|fap|jerk|cum|orgy|escort))([._-]|$)/
 /(^|[._-])((casino|poker|bet(ting)?|gambl(e|ing)|slot(s)?|jackpot|roulette|bingo|sportsbook))([._-]|$)/
@@ -53,15 +54,13 @@
 /(^|[._-])((crack|serial|keygen|warez|cheat|hacktool))([._-]|$)/
 
 ! ===========================================================
-! [5] TARGETED BLOCKS (명시적 차단)
+! [5] TARGETED BLOCKS
 ! ===========================================================
 ||doubleclick.net^
 ||googlesyndication.com^
-||ashleymadison.com^
 ||taboola.com^
 ||outbrain.com^
 ||adnxs.com^
-||ednplus.com^
 ||scorecardresearch.com^
 ||perfectmarket.com^
 ||exdynsrv.com^
@@ -69,15 +68,18 @@
 ||magsrv.com^
 ||f864fdc049.com^
 
-! [중요] Naver Pstatic 기본 차단 (Default Deny)
-! Accept Filter에 없는 pstatic 서브도메인은 모두 차단됨
+! ===========================================================
+! [6] NAVER PSTATIC DEFAULT DENY (core policy)
+! ===========================================================
 ||pstatic.net^
 
-! [Targeted] 네이버/라인 광고 서버 명시적 차단
+! Extra explicit Naver tracking/ad blocks (defense in depth)
 ||adcr.naver.com^
 ||adcreative.naver.com^
 ||glad.naver.com^
 ||lcs.naver.com^
 ||s.ni.naver.com^
+
+! Line ad blocks
 ||ads.line.me^
 ||adns*.line.naver.com^
