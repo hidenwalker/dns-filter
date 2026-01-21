@@ -1,7 +1,7 @@
 ! Title: Hiden Walker's AdGuard Home Reject Filter (Strict KR/JP Edition)
 ! Author: Hiden Walker
 ! Description: Blocking rules. Works in pair with hidenwalker-dns-accept-filter.txt
-! Last Modified: 2026-01-20
+! Last Modified: 2026-01-21
 ! Note: Includes Regex patterns, Country blocks, and Default Deny rules for pstatic.
 ! License: Personal use
 
@@ -94,6 +94,8 @@
 ||pstatic.net^
 
 ! Extra explicit Naver tracking/ad blocks (defense in depth)
+! [Ad] Naver VETA (Blocks Video Pre-roll & Display Ads)
+||veta.naver.com^
 ||adcr.naver.com^
 ||adcreative.naver.com^
 ||glad.naver.com^
