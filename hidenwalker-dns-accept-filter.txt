@@ -55,6 +55,7 @@
 @@||editor-static.pstatic.net^$important
 @@||blogthumb.pstatic.net^$important
 @@||mblogthumb-phinf.pstatic.net^$important
+@@||blogpfthumb-phinf.pstatic.net^$important
 
 ! [Shopping] Smart Store & Payments
 ! - static-resource: 결제 로직 필수
