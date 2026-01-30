@@ -45,7 +45,8 @@
 @@||cafe.pstatic.net^$important
 @@||cafethumb.pstatic.net^$important
 @@||cafeptthumb-phinf.pstatic.net^$important
-@@||ca-fe.pstatic.net^$client='192.168.0.12|192.168.0.16',important
+@@||mcafethumb-phinf.pstatic.net^$important
+@@||ca-fe.pstatic.net^$important
 
 ! [Blog/Editor] Essentials
 ! - postfiles: 본문 실제 이미지 (필수)
@@ -56,6 +57,7 @@
 @@||blogthumb.pstatic.net^$important
 @@||mblogthumb-phinf.pstatic.net^$important
 @@||blogpfthumb-phinf.pstatic.net^$important
+@@||feblog.pstatic.net^$important
 
 ! [Shopping] Smart Store & Payments
 ! - static-resource: 결제 로직 필수
