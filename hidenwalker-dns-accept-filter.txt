@@ -2,7 +2,7 @@
 ! Author: Hiden Walker
 ! Homepage: https://github.com/hidenwalker/dns-filter/
 ! Description: Whitelist rules. Works in pair with hidenwalker-dns-reject-filter.txt
-! Last Modified: 2026-01-21
+! Last Modified: 2026-01-30
 ! License: Personal use
 
 ! ===========================================================
