@@ -68,6 +68,8 @@
 @@||shop-phinf.pstatic.net^$important
 @@||shopping-phinf.pstatic.net^$important
 @@||dthumb-phinf.pstatic.net^$important
+@@||app-static.pstatic.net^$important
+@@||ncp-search.pstatic.net^$important
 
 ! [Webtoon/Series]
 @@||comic-dn.pstatic.net^$important
