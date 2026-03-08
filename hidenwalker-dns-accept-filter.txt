@@ -34,7 +34,6 @@
 @@||hangeul.pstatic.net^$important
 @@||static-nnews.pstatic.net^$important
 @@||static-like.pstatic.net^$important
-@@||phinf.pstatic.net^$important
 
 ! [News & Media]
 @@||mimgnews.pstatic.net^$important
@@ -72,6 +71,10 @@
 @@||app-static.pstatic.net^$important
 @@||ncp-search.pstatic.net^$important
 
+! [Finance]
+@@||financial.pstatic.net^$important
+@@||fc-resource.pstatic.net^$important
+
 ! [Webtoon/Series]
 @@||comic-dn.pstatic.net^$important
 @@||comicthumb-phinf.pstatic.net^$important
@@ -79,10 +82,10 @@
 
 ! [Conditional / Search UI]
 ! 네이버 메인/검색 화면 깨질 때만 주석 해제 (현재 차단 유지 중)
-! @@||s.pstatic.net^$important
+@@||s.pstatic.net^$important
 ! @@||ncp-search.pstatic.net^$important
 ! @@||search.pstatic.net^$important
-! @@||phinf.pstatic.net^$important (너무 광범위하므로 절대 전체 허용 금지)
+! @@||phinf.pstatic.net^$important (PHoto INFra 계열로 추정. 너무 광범위하므로 절대 전체 허용 금지)
 
 ! ===========================================================
 ! [4] KAKAO / DAUM / LINE
