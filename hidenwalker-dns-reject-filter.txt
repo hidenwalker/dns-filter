@@ -96,8 +96,9 @@
 ! Extra explicit Naver tracking/ad blocks (defense in depth)
 ! [Ad] Naver VETA (Blocks Video Pre-roll & Display Ads)
 ||veta.naver.com^
-||adcr.naver.com^
-||adcreative.naver.com^
+||siape.veta.naver.com^$important
+||adcr.naver.com^$important
+||adcreative.naver.com^$important
 ||glad.naver.com^
 ||lcs.naver.com^
 ||s.ni.naver.com^
