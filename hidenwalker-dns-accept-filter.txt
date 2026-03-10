@@ -71,6 +71,12 @@
 @@||app-static.pstatic.net^$important
 @@||ncp-search.pstatic.net^$important
 
+! [Maps]
+!@@||
+!^$important
+@@||map.pstatic.net^$important
+@@||nmap-place.pstatic.net^$important
+
 ! [Finance]
 @@||financial.pstatic.net^$important
 @@||fc-resource.pstatic.net^$important
