@@ -70,6 +70,7 @@
 @@||dthumb-phinf.pstatic.net^$important
 @@||app-static.pstatic.net^$important
 @@||ncp-search.pstatic.net^$important
+@@||naverpa-phinf.pstatic.net^$important
 
 ! [Maps]
 !@@||
