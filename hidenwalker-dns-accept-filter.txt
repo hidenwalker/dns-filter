@@ -34,6 +34,7 @@
 @@||hangeul.pstatic.net^$important
 @@||static-nnews.pstatic.net^$important
 @@||static-like.pstatic.net^$important
+@@||myspace.pstatic.net^$important
 
 ! [News & Media]
 @@||mimgnews.pstatic.net^$important
