@@ -71,6 +71,8 @@
 @@||app-static.pstatic.net^$important
 @@||ncp-search.pstatic.net^$important
 @@||naverpa-phinf.pstatic.net^$important
+@@||shopper-my.pstatic.net^$important
+@@||shoppingapp-phinf.pstatic.net^$important
 
 ! [Maps]
 !@@||
