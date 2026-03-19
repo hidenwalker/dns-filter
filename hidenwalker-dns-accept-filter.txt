@@ -85,6 +85,8 @@
 @@||maps-service.pstatic.net^$important
 @@||pup-review-phinf.pstatic.net^$important
 @@||myplace-phinf.pstatic.net^$important
+@@||ldb-phinf.pstatic.net^$important
+@@||g-place.pstatic.net^$important
 
 ! [Finance]
 @@||financial.pstatic.net^$important
