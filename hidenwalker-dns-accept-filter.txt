@@ -35,6 +35,8 @@
 @@||static-nnews.pstatic.net^$important
 @@||static-like.pstatic.net^$important
 @@||myspace.pstatic.net^$important
+@@||booking.pstatic.net^$important
+@@||naverbooking-phinf.pstatic.net^$important
 
 ! [News & Media]
 @@||mimgnews.pstatic.net^$important
