@@ -80,6 +80,8 @@
 !^$important
 @@||map.pstatic.net^$important
 @@||nmap-place.pstatic.net^$important
+@@||maps-service.pstatic.net^$important
+@@||pup-review-phinf.pstatic.net^$important
 
 ! [Finance]
 @@||financial.pstatic.net^$important
