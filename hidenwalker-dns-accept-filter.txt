@@ -37,6 +37,7 @@
 @@||myspace.pstatic.net^$important
 @@||booking.pstatic.net^$important
 @@||naverbooking-phinf.pstatic.net^$important
+@@||simg.pstatic.net^$important
 
 ! [News & Media]
 @@||mimgnews.pstatic.net^$important
@@ -61,6 +62,7 @@
 @@||mblogthumb-phinf.pstatic.net^$important
 @@||blogpfthumb-phinf.pstatic.net^$important
 @@||feblog.pstatic.net^$important
+@@||mblogvideo-phinf.pstatic.net^$important
 
 ! [Shopping] Smart Store & Payments
 ! - static-resource: 결제 로직 필수
