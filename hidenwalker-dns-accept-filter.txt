@@ -11,6 +11,7 @@
 @@||adguard.com^
 @@||cdn.jsdelivr.net^$important
 @@||nordvpn.nanorep.co^$important
+@@||teams.events.data.microsoft.com^$important
 
 ! ===========================================================
 ! [2] APPLE & GOOGLE ESSENTIALS
