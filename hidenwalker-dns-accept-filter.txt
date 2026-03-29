@@ -24,6 +24,15 @@
 @@||securemetrics.apple.com^$important
 ! [Device Exception] Apple Ads/News SDK for specific iPhone
 @@||iadsdk.apple.com^$client='192.168.0.16',important
+@@||amp-api-music-lb.itunes-apple.com.akadns.net^$important
+@@||lcdn-locator-usms11.apple.com.akadns.net^$important
+@@||gsp64-ssl.ls-apple.com.akadns.net^$important
+@@||cma.itunes-apple.com.akadns.net^$important
+@@||e673.dsce9.akamaiedge.net^$important
+@@||gsp35-sl01-edge-ssl.ls-apple.com.akadns.net^$important
+@@||e4686.dsce9.akamaiedge.net^$important
+@@||gsp-ssl-kr.ls-apple.com.akadns.net^$important
+@@||a1806.dscw154.akamai.net^$important
 
 ! ===========================================================
 ! [3] NAVER SERVICE OPTIMIZATION (Strict Mode Verified)
