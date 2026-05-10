@@ -2,7 +2,7 @@
 ! Author: Hiden Walker
 ! Homepage: https://github.com/hidenwalker/dns-filter/
 ! Description: Whitelist rules. Works in pair with hidenwalker-dns-reject-filter.txt
-! Last Modified: 2026-01-30
+! Last Modified: 2026-05-10
 ! License: Personal use
 
 ! ===========================================================
@@ -22,8 +22,11 @@
 @@||clients*.google.com^$important
 @@||googleapis.com^$important
 @@||securemetrics.apple.com^$important
+
 ! [Device Exception] Apple Ads/News SDK for specific iPhone
 @@||iadsdk.apple.com^$client='192.168.0.16',important
+
+! Apple Music / iTunes / Akamai CDN aliases
 @@||amp-api-music-lb.itunes-apple.com.akadns.net^$important
 @@||lcdn-locator-usms11.apple.com.akadns.net^$important
 @@||gsp64-ssl.ls-apple.com.akadns.net^$important
@@ -38,6 +41,7 @@
 ! [3] NAVER SERVICE OPTIMIZATION (Strict Mode Verified)
 ! Reject 리스트에서 차단된 pstatic.net 중 필수 요소만 핀셋 허용
 ! ===========================================================
+
 ! [Core] Auth & Basic UI
 @@||nid.naver.com^$important
 @@||ssl.pstatic.net^$important
@@ -48,24 +52,26 @@
 @@||booking.pstatic.net^$important
 @@||naverbooking-phinf.pstatic.net^$important
 @@||simg.pstatic.net^$important
+@@||appdown.pstatic.net^$important
 
 ! [News & Media]
 @@||mimgnews.pstatic.net^$important
 @@||imgnews.pstatic.net^$important
+@@||entertain.pstatic.net^$important
 
 ! [Cafe] Essentials
-! - cafeptthumb: 게시글 썸네일/프로필 (필수)
-! - ca-fe: 앱 내 웹뷰 렌더링/배너 (지정된 모바일 기기만 허용)
+! - cafeptthumb / mcafethumb: 게시글 썸네일 / 프로필 / 모바일 카페 썸네일
+! - ca-fe: 앱 내 웹뷰 렌더링 / 카페 프론트엔드 리소스
 @@||cafe.pstatic.net^$important
 @@||cafethumb.pstatic.net^$important
 @@||cafeptthumb-phinf.pstatic.net^$important
 @@||mcafethumb-phinf.pstatic.net^$important
 @@||ca-fe.pstatic.net^$important
 
-! [Blog/Editor] Essentials
-! - postfiles: 본문 실제 이미지 (필수)
-! - editor-static: 글쓰기 에디터 (필수)
-! - blogthumb/mblogthumb: 목록 썸네일 (사용자 요청 허용)
+! [Blog / Editor] Essentials
+! - postfiles: 본문 실제 이미지
+! - editor-static: 글쓰기 에디터
+! - blogthumb / mblogthumb / blogpfthumb: 블로그 목록 / 모바일 / 프로필 썸네일
 @@||postfiles.pstatic.net^$important
 @@||editor-static.pstatic.net^$important
 @@||blogthumb.pstatic.net^$important
@@ -75,8 +81,8 @@
 @@||mblogvideo-phinf.pstatic.net^$important
 
 ! [Shopping] Smart Store & Payments
-! - static-resource: 결제 로직 필수
-! - shop-phinf: 상품 상세 이미지
+! - static-resource: 장바구니 / 결제 로직
+! - shop-phinf / shopping-phinf / dthumb: 상품 이미지 / 리뷰 이미지
 @@||shopping-window.pstatic.net^$important
 @@||shopv.pstatic.net^$important
 @@||static-resource-smartstore.pstatic.net^$important
@@ -89,9 +95,7 @@
 @@||shopper-my.pstatic.net^$important
 @@||shoppingapp-phinf.pstatic.net^$important
 
-! [Maps]
-!@@||
-!^$important
+! [Maps / Place]
 @@||map.pstatic.net^$important
 @@||nmap-place.pstatic.net^$important
 @@||maps-service.pstatic.net^$important
@@ -100,19 +104,27 @@
 @@||ldb-phinf.pstatic.net^$important
 @@||g-place.pstatic.net^$important
 
+! [Dictionary / Knowledge]
+@@||dic-phinf.pstatic.net^$important
+@@||fe-kin.pstatic.net^$important
+
 ! [Finance]
 @@||financial.pstatic.net^$important
 @@||fc-resource.pstatic.net^$important
 
-! [Webtoon/Series]
+! [Audio / Music]
+@@||static-audiop.pstatic.net^$important
+
+! [Webtoon / Series / Novel]
 @@||comic-dn.pstatic.net^$important
 @@||comicthumb-phinf.pstatic.net^$important
 @@||image-comic.pstatic.net^$important
+@@||novel-phinf.pstatic.net^$important
+@@||static-serieson.pstatic.net^$important
 
 ! [Conditional / Search UI]
-! 네이버 메인/검색 화면 깨질 때만 주석 해제 (현재 차단 유지 중)
+! 네이버 메인 / 검색 화면 깨짐 방지
 @@||s.pstatic.net^$important
-! @@||ncp-search.pstatic.net^$important
 ! @@||search.pstatic.net^$important
 ! @@||phinf.pstatic.net^$important (PHoto INFra 계열로 추정. 너무 광범위하므로 절대 전체 허용 금지)
 
@@ -121,6 +133,7 @@
 ! ===========================================================
 @@||daumcdn.net^$important
 @@||kakaocdn.net^$important
+
 ! [Device Exception] Prevent app delay
 ! @@||stat.tiara.daum.net^$client='192.168.0.12',important
 
@@ -134,15 +147,19 @@
 ! ===========================================================
 ! [5] SHOPPING & FINANCE (KR/JP)
 ! ===========================================================
+
 ! Coupang
 @@||image.coupangcdn.com^$important
+
 ! Amazon JP / Rakuten
 @@||r.r10s.jp^$important
 @@||fls-fe.amazon.co.jp^$important
+
 ! Delivery Tracking
 @@||tracking.kuronekoyamato.co.jp^$important
 @@||tracking.sagawa-sgx.com^$important
 @@||trackings.post.japanpost.jp^$important
+
 ! Payments
 @@||paypal.com^$important
 @@||c.paypal.com^$client='192.168.0.12',important
@@ -162,14 +179,27 @@
 @@||local^$client='192.168.0.11'
 @@||use.typekit.net^$client='192.168.0.11'
 @@||lightstep.medium.systems^$client='192.168.0.11'
+
 ! Allow DDNS IP Check
 @@||checkip.dyndns.org^$client='192.168.0.252',important
 
 ! ===========================================================
-! [7] MISC & PERSONAL INTERESTS
+! [7] APP-SPECIFIC EXCEPTIONS
+! ===========================================================
+
+! Braze SDK
+@@||sdk.iad-05.braze.com^$important
+@@||sdk.iad-06.braze.com^$important
+
+! OneStore Core
+@@||sgc.onestore.co.kr^$important
+
+! ===========================================================
+! [8] MISC & PERSONAL INTERESTS
 ! ===========================================================
 @@||t.co^$important
 @@||bit.ly^
+
 ! Personal Whitelists
 @@||webhiden.jp^$important
 @@||daitoryuseimonkai.jimdofree.com^$important
