@@ -2,7 +2,7 @@
 ! Author: Hiden Walker
 ! Homepage: https://github.com/hidenwalker/dns-filter/
 ! Description: Whitelist rules. Works in pair with hidenwalker-dns-reject-filter.txt
-! Last Modified: 2026-05-10
+! Last Modified: 2026-09-09
 ! License: Personal use
 
 ! ===========================================================
@@ -69,16 +69,22 @@
 @@||ca-fe.pstatic.net^$important
 
 ! [Blog / Editor] Essentials
-! - postfiles: 본문 실제 이미지
+! - postfiles / blogfiles: 블로그 본문 이미지
 ! - editor-static: 글쓰기 에디터
 ! - blogthumb / mblogthumb / blogpfthumb: 블로그 목록 / 모바일 / 프로필 썸네일
 @@||postfiles.pstatic.net^$important
+@@||blogfiles.pstatic.net^$important
 @@||editor-static.pstatic.net^$important
 @@||blogthumb.pstatic.net^$important
 @@||mblogthumb-phinf.pstatic.net^$important
 @@||blogpfthumb-phinf.pstatic.net^$important
 @@||feblog.pstatic.net^$important
 @@||mblogvideo-phinf.pstatic.net^$important
+
+! [Blog Analytics / Compatibility Exception]
+! - scv-blog: Naver Blog service / analytics endpoint
+! - 기능 호환성을 위한 명시적 예외이며 Naver analytics 전체 허용은 아님
+@@||scv-blog.io.naver.com^$important
 
 ! [Shopping] Smart Store & Payments
 ! - static-resource: 장바구니 / 결제 로직
@@ -126,13 +132,21 @@
 ! 네이버 메인 / 검색 화면 깨짐 방지
 @@||s.pstatic.net^$important
 ! @@||search.pstatic.net^$important
-! @@||phinf.pstatic.net^$important (PHoto INFra 계열로 추정. 너무 광범위하므로 절대 전체 허용 금지)
+! @@||phinf.pstatic.net^$important
+! PHoto INFra 계열로 추정. 너무 광범위하므로 절대 전체 허용 금지
 
 ! ===========================================================
 ! [4] KAKAO / DAUM / LINE
 ! ===========================================================
 @@||daumcdn.net^$important
 @@||kakaocdn.net^$important
+
+! [Kakao Display Service Compatibility Exception]
+! - serv.ds.kakao.com: Kakao display-service hostname
+! - display-ad-rgt0me85.kgslb.com: backend / CNAME target
+! - 광고 전달 성격이 있으나 앱 호환성을 위해 명시적으로 허용
+@@||serv.ds.kakao.com^$important
+@@||display-ad-rgt0me85.kgslb.com^$important
 
 ! [Device Exception] Prevent app delay
 ! @@||stat.tiara.daum.net^$client='192.168.0.12',important
@@ -167,6 +181,9 @@
 @@||paypay.onelink.me^$important
 @@||agoda.com^$important
 
+! CSOB Czech Payment Gateway
+@@||api.platebnibrana.csob.cz^$important
+
 ! ===========================================================
 ! [6] IOT & CLIENT SPECIFIC EXCEPTIONS
 ! ===========================================================
@@ -193,6 +210,44 @@
 
 ! OneStore Core
 @@||sgc.onestore.co.kr^$important
+
+! Ticketmaster
+! - Public API endpoint used by Ticketmaster / event ticketing clients
+@@||pubapi.ticketmaster.com^$important
+
+! Ameba / Ameblo
+! - stat100: Ameba static JS / web resources
+! - usrcss: Ameblo user skin / CSS resources
+@@||stat100.ameba.jp^$important
+@@||usrcss.ameblo.jp^$important
+
+! FANSHIP / POPINFO Event Tracking
+! - events: app usage / push-open / content-view event collection
+! - event-action: user action / engagement event endpoint
+! - Analytics-oriented endpoints; explicitly allowed for app compatibility
+@@||events.popinfo.jp^$important
+@@||event-action.popinfo.jp^$important
+
+! Moonshot AI / Kimi
+! - Static web assets
+@@||statics.moonshot.cn^$important
+
+! Prague / OICT / PID Litacka
+! - client-ma: PID Litacka mobile backend and account verification
+! - mobile.parkovani: PID Litacka parking service backend
+! - pid.cz: Prague Integrated Transport service domain
+@@||client-ma.mos.oict.cz^$important
+@@||mobile.parkovani.pidlitacka.cz^$important
+@@||pid.cz^$important
+
+! GitHub Copilot / Microsoft Experimentation
+! - Copilot client experimentation / feature configuration endpoint
+@@||default.exp-tas.com^$important
+
+! C-Rings CRM / Campaign Links
+! - Email campaign click-tracking / redirect / registration links
+! - Used by Japanese services for forms, support and event links
+@@||j.c-rings.net^$important
 
 ! ===========================================================
 ! [8] MISC & PERSONAL INTERESTS
