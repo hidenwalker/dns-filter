@@ -108,6 +108,7 @@
 ||adns*.line.naver.com^
 
 ! Audit 2026-10-02: telemetry that slipped through wildcard allow rules (regex-first, broad)
+! NOTE: the next two rules are INACTIVE while the accept list keeps wildcard @@||googleapis.com^ and @@||line-scdn.net^ (AdGuard Home evaluates allowlists before any block rule).
 ! [Telemetry] Firebase analytics logging (googleapis.com is allowed wholesale; installations/remoteconfig stay allowed)
 /^firebaselogging(-pa)?\.googleapis\.com$/$important
 ! [Ad] Line ad image CDN hosts (line-scdn.net is allowed wholesale)
