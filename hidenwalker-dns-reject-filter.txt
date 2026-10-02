@@ -122,3 +122,11 @@
 ||beacondb.net^
 ! [Trial] Sony Bravia TV content/ad recommendation polling (TV only; revert if TV home screen breaks)
 ||applicast.jp.sonystyle.com^$client='192.168.0.123'
+
+! Adult-site ad chain (audit 2026-10-02): endpoints not covered by the upstream lists
+||gstcpx.site^
+||nodeviro.com^
+||thumbmarkjs.com^
+! Ad loaders rotate between random multi-word .com names (16-24 letters, apex only); regex catches the pattern
+! False positives seen on this network: Amazon captive-portal domains (allowed in the accept list)
+/^[a-z]{16,}\.com$/

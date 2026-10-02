@@ -312,3 +312,8 @@
 @@||d.line-scdn.net^$important
 @@||static.line-scdn.net^$important
 @@||pagepoker.line-scdn.net^$important
+
+! Exceptions for the long-name .com regex in the reject list (Amazon captive-portal checks)
+@@||firetvcaptiveportal.com^$important
+@@||fireoscaptiveportal.com^$important
+@@||acsechocaptiveportal.com^$important
