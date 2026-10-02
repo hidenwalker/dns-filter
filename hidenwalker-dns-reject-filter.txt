@@ -138,5 +138,3 @@
 /^[a-z]{8,10}\.in$/
 ||pgjazhdxsg.com^
 ||orpcmlekqqujdx.com^
-! Auto-added: hosts requested by the tested page that resolve into known ad-loader hosting ranges (2026-10-03)
-||adfeed-selftest.invalid^
