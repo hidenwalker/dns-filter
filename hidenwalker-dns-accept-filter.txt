@@ -261,3 +261,10 @@
 @@||magica-odo.jimdo.com^$important
 @@||kisuikan-tomikiaikido-dojo.jimdo.com^$important
 @@||kisuikan-tomikiaikido-dojo.jimdofree.com^$important
+
+! Naver image/profile CDN hosts blocked by ||pstatic.net^ (audit 2026-10-02: verified in query log, per-host exceptions)
+@@||phinf.pstatic.net^$important
+@@||profile-phinf.pstatic.net^$important
+@@||naverwebtoon-phinf.pstatic.net^$important
+@@||storep-phinf.pstatic.net^$important
+@@||search.pstatic.net^$important

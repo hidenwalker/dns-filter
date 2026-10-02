@@ -106,3 +106,19 @@
 ! Line ad blocks
 ||ads.line.me^
 ||adns*.line.naver.com^
+
+! Audit 2026-10-02: telemetry that slipped through wildcard allow rules (regex-first, broad)
+! [Telemetry] Firebase analytics logging (googleapis.com is allowed wholesale; installations/remoteconfig stay allowed)
+/^firebaselogging(-pa)?\.googleapis\.com$/$important
+! [Ad] Line ad image CDN hosts (line-scdn.net is allowed wholesale)
+/^ads?[0-9]*\.line-scdn\.net$/$important
+! [Telemetry] Microsoft events.data / Application Insights / Azure Monitor ingest (teams.events.data stays allowed by accept list)
+/^[a-z0-9-]+\.events\.data\.microsoft\.com$/
+||applicationinsights.azure.com^
+||in.ai.monitor.azure.com^
+! [Telemetry] misc collectors
+||fe-collector-pinpoint.navercorp.com^
+||sentry-internal.jamf.com^
+||beacondb.net^
+! [Trial] Sony Bravia TV content/ad recommendation polling (TV only; revert if TV home screen breaks)
+||applicast.jp.sonystyle.com^$client='192.168.0.123'
