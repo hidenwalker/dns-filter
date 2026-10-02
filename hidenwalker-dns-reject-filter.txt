@@ -130,3 +130,5 @@
 ! Ad loaders rotate between random multi-word .com names (16-24 letters, apex only); regex catches the pattern
 ! False positives seen on this network: Amazon captive-portal domains (allowed in the accept list)
 /^[a-z]{16,}\.com$/
+! Ad-network endpoint serving push/overlay ads, found by rendering the page in a headless browser (2026-10-02)
+||jabhamolbo.in^
