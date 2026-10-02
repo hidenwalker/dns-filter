@@ -20,7 +20,7 @@
 @@||xp.apple.com^$important
 @@||amp-api-edge.apps.apple.com^$important
 @@||clients*.google.com^$important
-@@||googleapis.com^$important
+@@||googleapis.com^
 @@||securemetrics.apple.com^$important
 
 ! [Device Exception] Apple Ads/News SDK for specific iPhone
@@ -152,7 +152,7 @@
 ! @@||stat.tiara.daum.net^$client='192.168.0.12',important
 
 ! Line Essentials
-@@||line-scdn.net^$important
+@@||line-scdn.net^
 @@||line-apps.com^$important
 @@||obs.line-scdn.net^$important
 @@||lan.line.me^$important
