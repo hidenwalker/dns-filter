@@ -132,3 +132,9 @@
 /^[a-z]{16,}\.com$/
 ! Ad-network endpoint serving push/overlay ads, found by rendering the page in a headless browser (2026-10-02)
 ||jabhamolbo.in^
+! Ad-network endpoints that passed the list engine in hourly rendered-page tests (2026-10-03).
+! Working loaders rotate every few hours: random 8-10 letter .in apex names and random 10-14 letter .com names.
+! The .in pattern had 0 matches among ~1150 apex domains seen on this network; a .com length pattern is not viable (162 matches).
+/^[a-z]{8,10}\.in$/
+||pgjazhdxsg.com^
+||orpcmlekqqujdx.com^
