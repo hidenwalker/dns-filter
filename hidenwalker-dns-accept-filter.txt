@@ -20,7 +20,6 @@
 @@||xp.apple.com^$important
 @@||amp-api-edge.apps.apple.com^$important
 @@||clients*.google.com^$important
-@@||googleapis.com^$important
 @@||securemetrics.apple.com^$important
 
 ! [Device Exception] Apple Ads/News SDK for specific iPhone
@@ -152,7 +151,6 @@
 ! @@||stat.tiara.daum.net^$client='192.168.0.12',important
 
 ! Line Essentials
-@@||line-scdn.net^$important
 @@||line-apps.com^$important
 @@||obs.line-scdn.net^$important
 @@||lan.line.me^$important
@@ -268,3 +266,49 @@
 @@||naverwebtoon-phinf.pstatic.net^$important
 @@||storep-phinf.pstatic.net^$important
 @@||search.pstatic.net^$important
+
+! ===========================================================
+! [8] INDIVIDUAL ALLOWS replacing the wildcard @@||googleapis.com^ and @@||line-scdn.net^ (audit 2026-10-02)
+! AdGuard evaluates allowlists before block rules, so a wildcard allow made the regex/list blocks for
+! firebaselogging*, ad*.line-scdn.net and *-pa promo/tracing hosts unreachable. Core functional hosts are allowed one by one.
+! ===========================================================
+
+! Google APIs
+@@||www.googleapis.com^$important
+@@||oauth2.googleapis.com^$important
+@@||oauthaccountmanager.googleapis.com^$important
+@@||accountcapabilities-pa.googleapis.com^$important
+@@||people-pa.googleapis.com^$important
+@@||peoplestack-pa.googleapis.com^$important
+@@||notifications-pa.googleapis.com^$important
+@@||fcmtoken.googleapis.com^$important
+@@||firebaseinstallations.googleapis.com^$important
+@@||firebaseremoteconfig.googleapis.com^$important
+@@||firebaseremoteconfigrealtime.googleapis.com^$important
+@@||play.googleapis.com^$important
+@@||update.googleapis.com^$important
+@@||youtubei.googleapis.com^$important
+@@||safebrowsing.googleapis.com^$important
+@@||clientservices.googleapis.com^$important
+@@||device-provisioning.googleapis.com^$important
+@@||storage.googleapis.com^$important
+@@||fonts.googleapis.com^$important
+@@||ajax.googleapis.com^$important
+@@||maps.googleapis.com^$important
+@@||mobilemaps.googleapis.com^$important
+@@||mobilemaps-pa-gz.googleapis.com^$important
+@@||mapsmobilesdks-pa.googleapis.com^$important
+@@||photos.googleapis.com^$important
+@@||photosdata-pa.googleapis.com^$important
+@@||android.googleapis.com^$important
+@@||meetings.googleapis.com^$important
+
+! LINE static/CDN
+@@||stickershop.line-scdn.net^$important
+@@||manager.line-scdn.net^$important
+@@||profile.line-scdn.net^$important
+@@||card-type-message.line-scdn.net^$important
+@@||vos.line-scdn.net^$important
+@@||d.line-scdn.net^$important
+@@||static.line-scdn.net^$important
+@@||pagepoker.line-scdn.net^$important
