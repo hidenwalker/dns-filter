@@ -80,6 +80,7 @@
 @@||blogpfthumb-phinf.pstatic.net^$important
 ! Naver blog comment widget assets (static-feedback); needed for comments to load (2026-10-04)
 @@||static-feedback.pstatic.net^$important
+@@||blogimgs.pstatic.net^$important
 @@||feblog.pstatic.net^$important
 @@||mblogvideo-phinf.pstatic.net^$important
 
