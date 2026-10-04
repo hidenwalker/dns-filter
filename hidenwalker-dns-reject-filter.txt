@@ -160,3 +160,6 @@
 
 ! Auto-added: hosts requested by the tested page that resolve into known ad-loader hosting ranges (2026-10-04)
 ||sibapvqucnty.in^
+! Auto-added: hosts requested by the tested page that resolve into known ad-loader hosting ranges (2026-10-04)
+||lowdychlbkivbf.com^
+||tetjryzf.com^
