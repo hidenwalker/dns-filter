@@ -151,3 +151,6 @@
 ! Auto-added: hosts requested by the tested page that resolve into known ad-loader hosting ranges (2026-10-04)
 ||xqcsszesb.com^
 ||zohjfmlrnlhm.com^
+! Auto-added: hosts requested by the tested page that resolve into known ad-loader hosting ranges (2026-10-04)
+||qxilgnpx.com^
+||wehoiczh.com^
