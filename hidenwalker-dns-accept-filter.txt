@@ -147,8 +147,8 @@
 ! [Kakao Display Service Compatibility Exception]
 ! - serv.ds.kakao.com: Kakao display-service hostname
 ! - display-ad-rgt0me85.kgslb.com: backend / CNAME target
-! - 광고 전달 성격이 있으나 앱 호환성을 위해 명시적으로 허용
-@@||serv.ds.kakao.com^$important
+! - 광고 전달 성격이 있으나 앱 호환성을 위해 명시적으로 허용(카카오톡 PC는 시작 광고 팝업 때문에 제외: 시험 중, 문제 없으면 전체 차단으로 확대)
+@@||serv.ds.kakao.com^$important,client=~'192.168.0.23'
 @@||display-ad-rgt0me85.kgslb.com^$important
 
 ! [Device Exception] Prevent app delay
