@@ -52,6 +52,12 @@
 /(^|[._-])((livecam|webcam|sexcam|camgirl|camshow|stripchat|chaturbate))([._-]|$)/
 /(^|[._-])((anti-?virus|antimalware|spyware|malware|pc-?cleaner|registry-?cleaner|system-?repair|driver-?updater))(20[0-3][0-9])?([._-]|$)/
 /(^|[._-])((crack|serial|keygen|warez|cheat|hacktool))([._-]|$)/
+! [Phishing] Telegram impersonation (misspelled brand tokens)
+/(^|[._-])(telegren|telegrcn|tggram|telergam)[0-9]*([._-]|$)/
+! [Phishing] Telegram/safety impersonation campaign (two-letter affix + .org)
+/^([a-z]{2,3}-(telegrama|grama|safetys)|(telegrama|grama|safetys)-[a-z]{2,3})\.org$/
+! [Phishing] Parcel/postal impersonation and redirect families
+/^(trackaupost|dpdsdd|dpdspd|fwdsdl|zeroredirect)[0-9]*\./
 
 ! ===========================================================
 ! [5] TARGETED BLOCKS
@@ -91,6 +97,18 @@
 ! OneStore ad/tracking hosts (2026-10-04): seen at app start on Android; previously blocked per-client only
 ||dn.onesto.re^
 ||mfcc.co.kr^
+! [Ad] Korean/Japanese ad & tracking networks (whole domain)
+||keywordsconnect.com^
+||samuraiclick.com^
+||webtracker.jp^
+||nan.co.jp^
+! [Phishing] Phishing campaign domain
+||legrama.org^
+! [Malware] Browser hijacker / PUP
+||newtabsearch.net^
+||socialsearchconverter.com^
+! [Scam] Adult dating spam
+||tonightshookup.com^
 
 ! ===========================================================
 ! [6] NAVER PSTATIC DEFAULT DENY (core policy)
