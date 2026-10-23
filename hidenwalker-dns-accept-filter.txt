@@ -324,3 +324,11 @@
 
 ! Dojo site falsely blocked by HaGeZi Pro (root iaigiri.com): 大日本居合道研修会, only the kenshukan subdomain is allowed
 @@||kenshukan.iaigiri.com^$important
+
+! Martial-arts / dojo sites falsely blocked, allowed per host only (never the parent domain). Reviewed 2026-10-23: legit content, no malicious signs
+! ikkansai.kakurezato.com: koryu research site (parent kakurezato.com is on HaGeZi Pro)
+@@||ikkansai.kakurezato.com^$important
+! nakanokendo.gouketu.com: Nakano Kendo Federation (parent gouketu.com is on HaGeZi Pro)
+@@||nakanokendo.gouketu.com^$important
+! yagyushinkageryu.com: Yagyu Shinkage-ryu dojo, false positive of the long-name .com regex
+@@||yagyushinkageryu.com^$important
