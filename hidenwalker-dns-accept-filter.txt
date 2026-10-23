@@ -321,3 +321,6 @@
 @@||firetvcaptiveportal.com^$important
 @@||fireoscaptiveportal.com^$important
 @@||acsechocaptiveportal.com^$important
+
+! Dojo site falsely blocked by HaGeZi Pro (root iaigiri.com): 大日本居合道研修会, only the kenshukan subdomain is allowed
+@@||kenshukan.iaigiri.com^$important
