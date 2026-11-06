@@ -44,6 +44,7 @@
 ! [Core] Auth & Basic UI
 @@||nid.naver.com^$important
 @@||ssl.pstatic.net^$important
+@@||brandconnect.pstatic.net^$important
 @@||hangeul.pstatic.net^$important
 @@||static-nnews.pstatic.net^$important
 @@||static-like.pstatic.net^$important
