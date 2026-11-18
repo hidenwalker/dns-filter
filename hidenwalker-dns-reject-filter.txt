@@ -772,3 +772,4 @@
 ||xgdxxxysjqpsim.com^
 ! Malware C2: search/click-fraud bot dropped by a fake DH4PK.exe self-extractor (2026-11-18)
 ||veroestin.t15.org^
+||spowcuzfeqwo.in^
