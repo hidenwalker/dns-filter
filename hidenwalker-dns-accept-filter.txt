@@ -335,3 +335,5 @@
 @@||yagyushinkageryu.com^$important
 ! tokyosomeionsensakura.com: Tokyo Someion Onsen Sakura (inn), false positive of the long-name .com regex
 @@||tokyosomeionsensakura.com^$important
+! ntp.jst.mfeed.ad.jp: JST public NTP server (mfeed), false positive of the ad-subdomain regex on ad.jp
+@@||ntp.jst.mfeed.ad.jp^$important
